@@ -29,22 +29,22 @@ License: You must have a valid license purchased only from themeforest(the above
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Page Vendors Styles(used by this page)-->
-		<link href="../../../../theme/html/demo2/dist/assets/plugins/custom/datatables/datatables.bundle5883.css?v=7.2.9" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/datatables/datatables.bundle5883.css?v=7.2.9" rel="stylesheet" type="text/css" />
 		<!--end::Page Vendors Styles-->
 		<!--begin::Global Theme Styles(used by all pages)-->
-		<link href="../../../../theme/html/demo2/dist/assets/plugins/global/plugins.bundle5883.css?v=7.2.9" rel="stylesheet" type="text/css" />
-		<link href="../../../../theme/html/demo2/dist/assets/plugins/custom/prismjs/prismjs.bundle5883.css?v=7.2.9" rel="stylesheet" type="text/css" />
-		<link href="../../../../theme/html/demo2/dist/assets/css/style.bundle5883.css?v=7.2.9" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/global/plugins.bundle5883.css?v=7.2.9" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/prismjs/prismjs.bundle5883.css?v=7.2.9" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle5883.css?v=7.2.9" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles-->
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
-		<link rel="shortcut icon" href="https://preview.keenthemes.com/metronic/theme/html/demo2/dist/assets/media/logos/favicon.ico" />
+		<link rel="shortcut icon" href="assets/logot.png" />
 		<!-- Hotjar Tracking Code for keenthemes.com -->
 		<script>(function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:1070954,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');</script>
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
-	<body id="kt_body" style="background-image: url(../../../../theme/html/demo2/dist/assets/media/bg/bg-10.jpg)" class="quick-panel-right demo-panel-right offcanvas-right header-fixed subheader-enabled page-loading">
+	<body id="kt_body" style="background-image: url(assets/media/bg/bg-10.jpg)" class="quick-panel-right demo-panel-right offcanvas-right header-fixed subheader-enabled page-loading">
 		<!-- Google Tag Manager (noscript) -->
 		<noscript>
 			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FS8GGP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -3931,7 +3931,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<!--begin::Heading-->
 									<div class="d-flex flex-column">
 										<!--begin::Title-->
-										<h2 class="text-white font-weight-bold my-2 mr-5">Scrollable Examples</h2>
+										<h2 class="text-white font-weight-bold my-2 mr-5">Sistem Manajemen Swab</h2>
 										<!--end::Title-->
 										<!--begin::Breadcrumb-->
 										<div class="d-flex align-items-center font-weight-bold my-2">
@@ -3942,19 +3942,11 @@ License: You must have a valid license purchased only from themeforest(the above
 											<!--end::Item-->
 											<!--begin::Item-->
 											<span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-											<a href="#" class="text-white text-hover-white opacity-75 hover-opacity-100">Crud</a>
+											<a href="#" class="text-white text-hover-white opacity-75 hover-opacity-100">LAB</a>
 											<!--end::Item-->
 											<!--begin::Item-->
 											<span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-											<a href="#" class="text-white text-hover-white opacity-75 hover-opacity-100">Datatables.net</a>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-											<a href="#" class="text-white text-hover-white opacity-75 hover-opacity-100">Basic</a>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-											<a href="#" class="text-white text-hover-white opacity-75 hover-opacity-100">Scrollable Tables</a>
+											<a href="#" class="text-white text-hover-white opacity-75 hover-opacity-100">UOBK RSUD SYAMRABU BANGKALAN</a>
 											<!--end::Item-->
 										</div>
 										<!--end::Breadcrumb-->
@@ -5489,15 +5481,15 @@ License: You must have a valid license purchased only from themeforest(the above
 		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#6993FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
 		<!--end::Global Config-->
 		<!--begin::Global Theme Bundle(used by all pages)-->
-		<script src="../../../../theme/html/demo2/dist/assets/plugins/global/plugins.bundle5883.js?v=7.2.9"></script>
-		<script src="../../../../theme/html/demo2/dist/assets/plugins/custom/prismjs/prismjs.bundle5883.js?v=7.2.9"></script>
-		<script src="../../../../theme/html/demo2/dist/assets/js/scripts.bundle5883.js?v=7.2.9"></script>
+		<script src="assets/plugins/global/plugins.bundle5883.js?v=7.2.9"></script>
+		<script src="assets/plugins/custom/prismjs/prismjs.bundle5883.js?v=7.2.9"></script>
+		<script src="assets/js/scripts.bundle5883.js?v=7.2.9"></script>
 		<!--end::Global Theme Bundle-->
 		<!--begin::Page Vendors(used by this page)-->
-		<script src="../../../../theme/html/demo2/dist/assets/plugins/custom/datatables/datatables.bundle5883.js?v=7.2.9"></script>
+		<script src="assets/plugins/custom/datatables/datatables.bundle5883.js?v=7.2.9"></script>
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
-		<script src="../../../../theme/html/demo2/dist/assets/js/pages/crud/datatables/basic/scrollable5883.js?v=7.2.9"></script>
+		<script src="assets/js/pages/crud/datatables/basic/scrollable5883.js?v=7.2.9"></script>
 		<!--end::Page Scripts-->
 	</body>
 	<!--end::Body-->
