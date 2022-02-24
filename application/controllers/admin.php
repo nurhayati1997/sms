@@ -14,7 +14,7 @@ class admin extends CI_Controller
 	public function index()
 	{
 		if ($this->session->userdata("id_user")) {
-			redirect("swab");
+			redirect("pendaftaran");
 		}
 
 		$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email', [
@@ -48,7 +48,7 @@ class admin extends CI_Controller
 				];
 				$this->session->set_userdata($data);
 
-				redirect('swab');
+				redirect('pendaftaran');
 			} else {
 				//$data['fotoCaptcha'] = $this->buatCaptcha();
 				$data["error"] = ["pass", "Password tidak cocok."];
