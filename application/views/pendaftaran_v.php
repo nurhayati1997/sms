@@ -94,8 +94,10 @@
 									</div>
 									<div class="card-body">
 										<!--begin: Datatable-->
-										<table class="table table-separate table-head-custom table-checkable" id="kt_datatable1">
-											<!-- <thead>
+                    <div class="table-responsive" id="tempatTabel">
+                    </div>
+										<!-- <table class="table table-separate table-head-custom table-checkable" id="kt_datatable1">
+											<thead>
 												<tr>
 													<th>NO</th>
 													<th>Tgl Daftar</th>
@@ -108,8 +110,8 @@
 												</tr>
 											</thead>
 											<tbody>
-											</tbody> -->
-										</table>
+											</tbody>
+										</table> -->
 										<!--end: Datatable-->
 									</div>
 								</div>
@@ -118,41 +120,36 @@
 							</div>
 							<!--end::Container-->
 						</div>
-
+            <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
-  // $(document).ready(function() {
-  //   //  add_list();
-  //   tampilkan();
-  // }); 
   tampilkan();
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-flush" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tanggal</th><th>Nama</th><th>Keperluan</th><th>Pendengaran</th><th>Warna</th><th>Keterangan</th></tr></thead><tbody>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="kt_datatable1"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tgl Daftar</th><th>Nama</th><th>NIK</th><th>No Hp</th><th>Umur</th><th>Status</th></tr></thead>'
       $.ajax({
         type:'POST',
-        url: '<?= base_url() ?>operator_gcu/tampil',
+        url: '<?= base_url() ?>pendaftaran/tampil',
         dataType :'json',
         success: function(data){
-          // console.log(data);
+         //console.log(data);
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" class="badge badge-danger" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="fa fa-times"></i></div>'
             baris += ' <div style="cursor:pointer;" title="edit?" class="badge badge-info" id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="fa fa-edit"></i></div>'
             baris += ' <div style="cursor:pointer;" title="Cetak?" class="badge badge-success" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="fa fa-print"></i></div>'
-            // baris += ' <div style="cursor:pointer;" title="Cetak?" class="badge badge-success" id="cetak' + data[i].id + '" onClick="send_form()"><i class="fa fa-print"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
-            baris += '<td>' + data[i].tgl_daftar_gcu + '</td>'
+            baris += '<td>' + data[i].tgl_daftar_swab + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
-            baris += '<td>' + data[i].keperluan_pasien_gcu + '</td>'
-            baris += '<td>' + data[i].pendengaran_pasien_gcu + '</td>'
-            baris += '<td>' + data[i].warna_pasien_gcu + '</td>'
-            baris += '<td>' + data[i].keterangan_pasien_gcu + '</td>'
+            baris += '<td>' + data[i].nik + '</td>'
+            baris += '<td>' + data[i].ttl + '</td>'
+            baris += '<td>' + data[i].umur + '</td>'
+            baris += '<td>' + data[i].status + '</td>'
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
           $("#tempatTabel").html(baris);
-          $('#tabelUser').DataTable({
+          $('#kt_datatable1').DataTable({
             "pageLength": 10,
           });
         }
