@@ -135,15 +135,16 @@
          //console.log(data);
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
-            baris += '<td><div style="cursor:pointer;" title="hapus?" class="badge badge-danger" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="fa fa-times"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="edit?" class="badge badge-info" id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="fa fa-edit"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="Cetak?" class="badge badge-success" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="fa fa-print"></i></div>'
+            baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
+            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
+            baris += ' <div style="cursor:pointer;" title="Cetak?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon2-printer text-primary"></i></div></td>'
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].tgl_daftar_swab + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
             baris += '<td>' + data[i].nik + '</td>'
             baris += '<td>' + data[i].ttl + '</td>'
             baris += '<td>' + data[i].umur + '</td>'
+            // baris += '<td> <a class="btn btn-light-danger font-weight-bold mr-2> ' + data[i].status +' <i class="flaticon2-open-box"></i> </a> </td>'
             baris += '<td>' + data[i].status + '</td>'
             baris += '</td></tr>'
           }
