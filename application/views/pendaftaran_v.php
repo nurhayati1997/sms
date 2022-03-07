@@ -126,7 +126,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="kt_datatable1"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tgl Daftar</th><th>Nama</th><th>NIK</th><th>No Hp</th><th>Umur</th><th>Status</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tgl Daftar</th><th>Nama</th><th>Jenis Swab</th><th>Status</th><th>NIK</th><th>No Hp</th><th>Umur</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>pendaftaran/tampil',
@@ -141,16 +141,16 @@
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].tgl_daftar_swab + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
-            baris += '<td>' + data[i].nik + '</td>'
-            baris += '<td>' + data[i].ttl + '</td>'
-            baris += '<td>' + data[i].umur + '</td>'
-            // baris += '<td> <a class="btn btn-light-danger font-weight-bold mr-2> ' + data[i].status +' <i class="flaticon2-open-box"></i> </a> </td>'
+            baris += '<td>' + data[i].jenis_swab + '</td>'
             baris += '<td>' + data[i].status + '</td>'
+            baris += '<td>' + data[i].nik + '</td>'
+            baris += '<td>' + data[i].no_hp + '</td>'
+            baris += '<td>' + data[i].umur + '</td>'
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
           $("#tempatTabel").html(baris);
-          $('#kt_datatable1').DataTable({
+          $('#tabelUser').DataTable({
             "pageLength": 10,
           });
         }
