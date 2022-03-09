@@ -118,6 +118,67 @@
 								<!--end::Card-->
 								<!--begin::Card-->
 							</div>
+              <!-- hapus -->
+              <div class="modal fade" id="modalHapus" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header no-bd">
+                      <h5 class="modal-title">
+                        <span class="fw-mediumbold">
+                          Hapus Data Pasien</span>
+                        <span class="fw-light">
+                          User
+                        </span>
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p id="teksHapus"></p>
+                      <input type="hidden" id="id_hapus" name="id_hapus" />
+                    </div>
+                    <div class="modal-footer no-bd">
+                      <button type="button" id="hapus" onClick="hapus()" class="btn btn-primary">Hapus</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- edit -->
+                  <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                    <div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body p-0">
+                          <div class="card bg-secondary border-0 mb-0">
+                            <div class="card-header bg-success pb-1">
+                              <div class="text-muted text-center mt-2 mb-3">
+                                <span class="text-muted text-white">Form Edit Status Pelayanan </span>
+                              </div>
+                            </div>
+                            <div class="card-body px-lg-5 py-lg-5">
+                              <form role="form">
+                                <div class="form-group mb-3">
+                                  <input id="idUser" type="hidden">
+                                  <!-- <label class="form-control-label" for="exampleFormControlSelect1">Pendengaran</label> -->
+                                  <select class="form-control" id="status">
+                                    <option value="0">Belum dilayani</option>
+                                    <option value="1">Sudah diLayani</option>
+                                  </select>
+                                </div>
+                                <div class="badge badge-danger" id="pesanErrorEdit"></div>
+                                <div class="text-center">
+                                  <button type="button" onClick="edit()" id="tombolEdit" class="btn btn-success my-2">Tambah</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
 							<!--end::Container-->
 						</div>
             <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -157,32 +218,17 @@
       });
   }
 
-
-
-  function tryCetak(id) {
-    window.open(
-       "<?= site_url(); ?>operator_gcu/dataById/" + id);
-  }
-
-
-
   function tryEdit(id) {
     $("#tombolEdit" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
     $("#idUser").val(id)
     $.ajax({
-      url: '<?= base_url() ?>operator_gcu/edit_id',
+      url: '<?= base_url() ?>pendaftaran/edit_id',
       method: 'post',
-      data: "target=gcu_syamrabu&id=" + id,
+      data: "target=swab_syamrabu&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#modalEdit").modal('show')
-        $("#pendengaran_pasien_gcu").val(data.pendengaran_pasien_gcu)
-        $("#warna_pasien_gcu").val(data.warna_pasien_gcu)
-        $("#bb_pasien_gcu").val(data.bb_pasien_gcu)
-        $("#tb_pasien_gcu").val(data.tb_pasien_gcu)
-        $("#keterangan_pasien_gcu").val(data.keterangan_pasien_gcu)
-        $("#nip_dokter_gcu").val(data.nip_dokter_gcu)
-        $("#nama_dokter_gcu").val(data.nama_dokter_gcu)
+        $("#status").val(data.status)
         console.log(data)
         $("#edit" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -191,39 +237,20 @@
 
   function edit() {
     $("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
-    var pendengaran_pasien_gcu = $("#pendengaran_pasien_gcu").val()
-    var warna_pasien_gcu = $("#warna_pasien_gcu").val()
-    var tb_pasien_gcu = $("#tb_pasien_gcu").val()
-    var bb_pasien_gcu = $("#bb_pasien_gcu").val()
-    var keterangan_pasien_gcu = $("#keterangan_pasien_gcu").val()
-    var nip_dokter_gcu = $("#nip_dokter_gcu").val()
-    var nama_dokter_gcu = $("#nama_dokter_gcu").val()
+    var status = $("#status").val()
     var id = $("#idUser").val()
     $.ajax({
-      url: '<?= base_url() ?>operator_gcu/edit',
+      url: '<?= base_url() ?>pendaftaran/edit',
       method: 'post',
       data: {
         id: id,
-        pendengaran_pasien_gcu: pendengaran_pasien_gcu,
-        tb_pasien_gcu: tb_pasien_gcu,
-        bb_pasien_gcu: bb_pasien_gcu,
-        keterangan_pasien_gcu: keterangan_pasien_gcu,
-        warna_pasien_gcu: warna_pasien_gcu,
-        nip_dokter_gcu: nip_dokter_gcu,
-        nama_dokter_gcu: nama_dokter_gcu
+        status: status
       },
       dataType: 'json',
       success: function(data) {
         if (data == "") {
           $("#idUser").val("")
-          $("#pendengaran_pasien_gcu").val("")
-          $("#tb_pasien_gcu").val("")
-          $("#bb_pasien_gcu").val("")
-          $("#warna_pasien_gcu").val("")
-          $("#keterangan_pasien_gcu").val("")
-          $("#nip_dokter_gcu").val("")
-          $("#nama_dokter_gcu").val("")
-          $('#pesanErrorTambah').html("")
+          $("#status").val("")
         } else {
           $('#pesanErrorEdit').html(data)
         }
@@ -234,12 +261,19 @@
     });
   }
 
+  function tryCetak(id) {
+    window.open(
+       "<?= site_url(); ?>pendaftaran/dataById/" + id);
+  }
+
+
+
   function tryHapus(id) {
     $("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
     $.ajax({
-      url: 'operator_gcu/edit_id',
+      url: '<?= base_url() ?>pendaftaran/edit_id',
       method: 'post',
-      data: "target=gcu_syamrabu&id=" + id,
+      data: "target=swab_syamrabu&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val(id)
@@ -255,9 +289,9 @@
     $("#hapus").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
     var id = $("#id_hapus").val()
     $.ajax({
-      url: 'operator_gcu/hapus',
+      url: '<?= base_url() ?>pendaftaran/hapus',
       method: 'post',
-      data: "target=gcu_syamrabu&id=" + id,
+      data: "target=swab_syamrabu&id=" + id,
       dataType: 'json',
       success: function(data) {
         $("#id_hapus").val("")
