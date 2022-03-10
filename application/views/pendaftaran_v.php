@@ -179,6 +179,1411 @@
                     </div>
                   </div>
 
+              <!-- view -->
+                  <div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                    <div class="modal-dialog modal- modal-dialog-centered modal-xl" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body p-0">
+                          <div class="card bg-secondary border-0 mb-0">
+                            <div class="card-header bg-success pb-1">
+                              <div class="text-muted text-center mt-2 mb-3">
+                                <span class="text-muted text-white">Data Pasien</span>
+                              </div>
+                            </div>
+                            <div class="card-body px-lg-5 py-lg-5">
+                            <form class="form">
+												<div class="card-body">
+													<div class="form-group row">
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Pilih Jenis Test SWAB</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="jenis_swab" id="jenis_swab" value="antigen" />
+																<span></span>SWAB ANTIGEN</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="jenis_swab" id="jenis_swab" value="pcr" />
+																<span></span>SWAB PCR</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<label>A. IDENTITAS PASIEN:</label>
+															<span class="form-text text-muted">Mohon Masukkan Nama Lengkap Anda</span>
+															<input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" required />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan NIK Sesuai KTP</span>
+															<input type="text" class="form-control" id="nik" placeholder="NIK" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Username:</label> -->
+															<span class="form-text text-muted">Masukkan Nama Orang tua sesuai KK</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-user"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_ortu" placeholder="Nama Orang Tua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan Tgl Lahir Sesuai KTP</span>
+															<input type="date" class="form-control" id="ttl" placeholder="Pilih Tanggal" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Username:</label> -->
+															<span class="form-text text-muted">Masukkan Umur Anda</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="umur" placeholder="Umur" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Pilih Jenis Kelamin</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="jk" id="jk" value="male" />
+																<span></span>Laki-Laki</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="jk" id="jk" value="female" />
+																<span></span>Perempuan</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Username:</label> -->
+															<span class="form-text text-muted">Masukkan Pekerjaan Anda Sesuai KTP</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="pekerjaan" placeholder="Pekerjaan" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan Jalan / Blok</span>
+															<input type="text" class="form-control" id="jalan" placeholder="Jalan / Blok" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan RT / RW</span>
+															<input type="text" class="form-control" id="rt" placeholder="RT / RW" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan Desa / Kelurahan</span>
+															<input type="text" class="form-control" id="desa" placeholder="Desa / Kelurahan" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan Kecamatan</span>
+															<input type="text" class="form-control" id="kec" placeholder="Kecamatan" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan Kabupaten / Kota</span>
+															<input type="text" class="form-control" id="kab" placeholder="Kabupaten / Kota" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Username:</label> -->
+															<span class="form-text text-muted">Masukkan Telp / HP</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="no_hp" placeholder="Telepon / HP" />
+															</div>
+														</div>
+													</div>
+													<div class="form-group row">
+														<div class="col-lg-4">
+															<label>B. INFORMASI KLINIS:</label>
+															<span class="form-text text-muted">Masukkan Tgl Pertama kali Timbul gejala</span>
+															<input type="date" class="form-control" id="timbul_gejala" placeholder="Tgl pertama kali timbul gejala" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah ada Riwayat Demam ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_demam" id="riwayat_demam" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_demam" id="riwayat_demam" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Fax:</label> -->
+															<span class="form-text text-muted">Masukkan Derajat Demam</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="derajat_demam" placeholder="Misal 39 " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah ada Batuk?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah ada Pilek?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah ada Sakit Tenggorokan?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah ada Sakit Kepala?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah Lemah (malaise)?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="lemah" id="lemah" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="lemah" id="lemah" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="lemah" id="lemah" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah Nyeri Otot?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="nyeri_otot" id="nyeri_otot"  value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="nyeri_otot" id="nyeri_otot" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="nyeri_otot" id="nyeri_otot" value="2"/>
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah Nyeri Mual atau Muntah?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="mual" id="mual"  value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="mual" id="mual" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="mual" id="mual" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah Nyeri Abdomen?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="abdomen" id="abdomen"  value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="abdomen" id="abdomen" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="abdomen" id="abdomen" value="2"/>
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah Diare?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="diare" id="diare"  value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="diare" id="diare" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="diare" id="diare" value="2"/>
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group row">
+														<div class="col-lg-4">
+															<label>KONDISI PENYERTA:</label>
+															<span class="form-text text-muted">Apakah Hamil ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="hamil" id="hamil" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="hamil" id="hamil" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah ada Diabetes ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="diabetes" id="diabetes" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="diabetes" id="diabetes" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah ada Penyakit Jantung ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="jantung" id="jantung" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="jantung" id="jantung" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah ada Hipertensi ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="hipertensi" id="hipertensi" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="hipertensi" id="jantung" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah ada Keganasan ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="keganasan" id="keganasan" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="keganasan" id="keganasan" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah ada Gangguan Imunologi ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="gangguan_imunologi" id="gangguan_imunologi" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="gangguan_imunologi" id="gangguan_imunologi" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah ada Gagal Ginjal  Kronis ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="gagal_ginjal" id="gagal_ginjal" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="gagal_ginjal" id="gagal_ginjal" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah ada Gangguan Hati Kronis ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="gangguan_hati" id="gangguan_hati" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="gangguan_hati" id="gangguan_hati" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah ada PPOK ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="ppok" id="ppok" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="ppok" id="ppok" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Lainnya, Sebutkan :</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="kondisi_penyerta_lain" placeholder="Kondisi Penyerta Lain" />
+															</div>
+														</div>
+													</div>
+													<div class="form-group row">
+														<div class="col-lg-4">
+															<label>DIAGNOSIS:</label>
+															<span class="form-text text-muted">Apakah ada Pneumonia (Klinis atau Radiologi) ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="pneumonia" id="pneumonia" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="pneumonia" id="pneumonia" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="pneumonia" id="pneumonia" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah ada ARDS (Acute Respiratory Distress Syndrome) ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="ards" id="ards" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="ards" id="ards" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="ards" id="ards" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Diagnosis Lainnya, Sebutkan :</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="diagnosis_lain" placeholder="Diagnosis Lain" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah Pasien Mempunyai diagnosis atau otiologi lain untuk penyakit Pernafasannya ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="etiologi" id="etiologi" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="etiologi" id="etiologi" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="etiologi" id="etiologi" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Diagnosis Penyaki Pernafasan Lainnya, Sebutkan :</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="diagnosis_pernafasan_lain" placeholder="Diagnosis Penyakit Pernafasan Lain" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah Pasien dirawat di rumah sakit ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="rawat_rs" id="rawat_rs" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="rawat_rs" id="rawat_rs" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Bila Ya, Nama RS Terakhir :</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="rs_terakhir" placeholder="isi (-) jika tidak dirawat di rs" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tanggal Masuk RS Terakhir :</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_masuk_rs" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah Pasien dirawat di ICU ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="rawat_icu" id="rawat_icu" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="rawat_icu" id="rawat_icu" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah di lakukan tindakan perawatan intubasi ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="tindakan_intubasi" id="tindakan_intubasi" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="tindakan_intubasi" id="tindakan_intubasi" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah di lakukan tindakan perawatan penggunaan EMCO ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="penggunaan_emco" id="penggunaan_emco" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="penggunaan_emco" id="penggunaan_emco" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Jika ada, nama-nama RS sebelumnya :</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="rs_sebelumnya" placeholder="isi (-) jika tidak" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Status Pasien terakhir : </span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="status_pasien_terakhir" id="status_pasien_terakhir" value="1" />
+																<span></span>Selesai Isolasi/Sembuh</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="status_pasien_terakhir" id="status_pasien_terakhir" value="2" />
+																<span></span>Masih Sakit</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="status_pasien_terakhir" id="status_pasien_terakhir" value="3" />
+																<span></span>Meninggal</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Jika Meninggal, Tanggal Meninggal :</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_meninggal" />
+															</div>
+														</div>
+													</div>
+													<div class="form-group row">
+														<!-- luar negeri -->
+														<div class="col-lg-4">
+															<label>C.Faktor Riwayat Perjalanan:</label>
+															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki riwayat perjalanan dari luar negeri ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Negara Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="negara_1" placeholder="Negara pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Kota Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="kota_1" placeholder="Kota pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tanggal Perjalanan Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_negara_1" placeholder="Negara pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tgl tiba di Indonesia Pada perjalanan Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_tiba_negara_1" placeholder="Tanggal Tiba pada Perjalanan Pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Negara Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="negara_2" placeholder="Negara kedua " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Kota Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="kota_2" placeholder="Kota kedua " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tanggal Perjalanan Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_negara_2"  />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tgl tiba di Indonesia Pada Perjalanan Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_tiba_negara_2" />
+															</div>
+														</div>
+														<!-- transmisi lokal -->
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki riwayat perjalanan dari area transmisi lokal ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Provinsi Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="provinsi_transmisi_1" placeholder="Provinsi tansmisi lokal pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Kota Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="kota_transmisi_1" placeholder="Kota tansmisi lokal pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tanggal Perjalanan di transmisi lokal Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_transmisi_1"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tgl tiba dari transmisi lokal Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_tiba_transmisi_1"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Provinsi Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="provinsi_transmisi_2" placeholder="Provinsi tansmisi lokal kedua " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Kota Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="kota_transmisi_2" placeholder="Kota tansmisi lokal kedua " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tanggal Perjalanan di transmisi lokal Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_transmisi_2"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tgl tiba dari transmisi lokal Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_tiba_transmisi_2"/>
+															</div>
+														</div>
+														<!-- ke transmisi lokal -->
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki riwayat perjalanan ke area transmisi lokal ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Provinsi</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="provinsi_ketransmisi" placeholder="Provinsi ke tansmisi lokal " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Kota</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="kota_ketransmisi" placeholder="Kota ke tansmisi lokal" />
+															</div>
+														</div>
+														<!-- kontak dengan suspek/probable-->
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki kontak dengan suspek/probable COVID-19 ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="0" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="2" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak suspek/probable Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_suspek_1" placeholder="Nama suspek/probable pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat yang Kontak suspek/probable Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_suspek_1" placeholder="alamat suspek/probable pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan hubungan dengan Kontak suspek/probable Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_suspek_1" placeholder="hubungan dengan suspek/probable pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tanggal Pertama Kontak dengan suspek/probable</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_kontak_suspek_1"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tgl terakhir kontak dengan suspek/probable</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_terakhir_kontak_suspek_1"/>
+															</div>
+														</div>
+													</div>
+
+													<!-- D -->
+													<div class="form-group row">
+														<!-- kontak dengan konfirm-->
+														<div class="col-lg-4">
+															<label>D. Faktor Kontak/Paparan (lanjutan)</label>
+															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki kontak erat dengan kasus konfirmasi dan probable COVID-19 ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_kontak_konfirm" id="riwayat_kontak_konfirm" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_kontak_konfirm" id="riwayat_kontak_konfirm" value="2" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_kontak_konfirm" id="riwayat_kontak_konfirm" value="0" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak Konfirm & probable Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_konfirm_1" placeholder="Nama Konfirm pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat yang Kontak Konfirm & probable Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_konfirm_1" placeholder="alamat Konfirm pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan hubungan dengan Kontak Konfirm & probable Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_konfirm_1" placeholder="hubungan dengan Konfirm pertama " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tanggal Pertama Kontak dengan Konfirm & probable</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_kontak_konfirm_1"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Tgl terakhir kontak dengan Konfirm & probable</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="date" class="form-control" id="tgl_terakhir_kontak_konfirm_1"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah pasien termasuk cluster ISPA berat (demam & pneumonia membutuhkan perawatan Rumah Sakit) yang tidak diketahui penyebabnya ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="ispa" id="ispa" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="ispa" id="ispa" value="2" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="ispa" id="ispa" value="0" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah pasien memiliki hewan peliharaan ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="hewan_peliharaaan" id="hewan_peliharaaan" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="hewan_peliharaaan" id="hewan_peliharaaan" value="2" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="hewan_peliharaaan" id="hewan_peliharaaan" value="0" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan, Jika memiliki hewan peliharaan</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="jenis_hewan_peliharaan" placeholder="Jenis Hewan Peliharaan " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah Pasien Seorang petugas Kesehatan ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="petugas_kesehatan" id="petugas_kesehatan" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="petugas_kesehatan" id="petugas_kesehatan" value="2" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="petugas_kesehatan" id="petugas_kesehatan" value="0" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Jika Petugas kesehatan, Alat Pelindung diri (APD) apa yg dipakai
+																saat melakukan perawatan pada pasien suspek / peobable / Konfirm?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="apd" id="apd" value="1" />
+																<span></span>Gwon</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="apd" id="apd" value="2" />
+																<span></span>Masker Media</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="apd" id="apd" value="3" />
+																<span></span>Sarung Tangan</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="apd" id="apd" value="4" />
+																<span></span>Masker </label>
+																<label class="radio radio-solid">
+																<input type="radio" name="apd" id="apd" value="5" />
+																<span></span>Tidak</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="apd" id="apd" value="6" />
+																<span></span>Tidak Tahu</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="apd" id="apd" value="7" />
+																<span></span>Tidak Tahu</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah Melakukan prosedur yang menimbukan aerosol ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="aerosol" id="aerosol" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="aerosol" id="aerosol" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan, Jika melakukan prosedur yang menimbulkan aerosol</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="sebutkan_aerosol" placeholder="Jenis Hewan Peliharaan " />
+															</div>
+														</div>
+													</div>
+													<div class="form-group row">
+														<!-- kontak 1 -->
+														<div class="col-lg-4">
+															<label>D.Daftar Kontak Erat Kasus</label>
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_kasus_1" placeholder="Nama Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="umur_kasus_1" placeholder="Umur Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="jk_kasus_1" placeholder="Jenis Kelamin Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_kasus_1" placeholder="Hubungan dengan Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_kasus_1" placeholder="Alamat Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hp_kasus_1" placeholder="No Hp Kontak Kasus Kedua"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="aktifitas_kasus_1"/>
+															</div>
+														</div>
+														<!-- kontak 2 -->
+														<div class="col-lg-4">
+														<br>
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_kasus_2" placeholder="Nama Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="umur_kasus_2" placeholder="Umur Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="jk_kasus_2" placeholder="Jenis Kelamin Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_kasus_2" placeholder="Hubungan dengan Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_kasus_2" placeholder="Alamat Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hp_kasus_2" placeholder="No Hp Kontak Kasus Kedua"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="aktifitas_kasus_2"/>
+															</div>
+														</div>
+														<!-- kontak 3 -->
+														<div class="col-lg-4">
+														<br>
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_kasus_3" placeholder="Nama Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="umur_kasus_3" placeholder="Umur Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="jk_kasus_3" placeholder="Jenis Kelamin Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_kasus_3" placeholder="Hubungan dengan Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_kasus_3" placeholder="Alamat Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hp_kasus_3" placeholder="No Hp Kontak Kasus Ketiga"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="aktifitas_kasus_3"/>
+															</div>
+														</div>
+														<!-- kontak 4 -->
+														<div class="col-lg-4">
+														<br>
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_kasus_4" placeholder="Nama Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="umur_kasus_4" placeholder="Umur Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="jk_kasus_4" placeholder="Jenis Kelamin Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_kasus_4" placeholder="Hubungan dengan Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_kasus_4" placeholder="Alamat Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hp_kasus_4" placeholder="No Hp Kontak Kasus Keempat"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="aktifitas_kasus_4"/>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card-footer">
+													<div class="row">
+														<div class="col-lg-4"></div>
+														<div class="col-lg-8">
+															<button type="reset" onClick="tambah()" id="tombolTambah" class="btn btn-primary mr-2">Submit</button>
+															<button type="reset" class="btn btn-secondary">Cancel</button>
+														</div>
+													</div>
+												</div>
+											</form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
 							<!--end::Container-->
 						</div>
             <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -198,7 +1603,7 @@
             baris += '<tr>'
             baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
             baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="Cetak?" id="cetak' + data[i].id + '" onClick="tryCetak(' + data[i].id+ ')"><i class="flaticon2-printer text-primary"></i></div></td>'
+            baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].tgl_daftar_swab + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
@@ -216,6 +1621,10 @@
           });
         }
       });
+  }
+  function tryCetak(id) {
+    window.open(
+       "<?= site_url(); ?>pendaftaran/dataById/" + id);
   }
 
   function tryEdit(id) {
@@ -261,12 +1670,52 @@
     });
   }
 
-  function tryCetak(id) {
-    window.open(
-       "<?= site_url(); ?>pendaftaran/dataById/" + id);
+  function tryView(id) {
+    $("#tombolView" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
+    $("#idUser").val(id)
+    $.ajax({
+      url: '<?= base_url() ?>pendaftaran/edit_id',
+      method: 'post',
+      data: "target=swab_syamrabu&id=" + id,
+      dataType: 'json',
+      success: function(data) {
+        $("#modalView").modal('show')
+        $("#riwayat_demam").val(data.riwayat_demam)
+        $("#nama").val(data.nama)
+        console.log(data)
+        $("#view" + id).html('<i class="fa fa-edit"></i>')
+      }
+    });
   }
 
-
+  function view() {
+    $("#tombolView").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
+    var riwayat_demam = $("#riwayat_demam").val()
+    var nama = $("#nama").val()
+    var id = $("#idUser").val()
+    $.ajax({
+      url: '<?= base_url() ?>pendaftaran/edit',
+      method: 'post',
+      data: {
+        id: id,
+        riwayat_demam: riwayat_demam,
+        nama: nama
+      },
+      dataType: 'json',
+      success: function(data) {
+        if (data == "") {
+          $("#idUser").val("")
+          $("#jenis_swab").val("")
+          $("#nama").val("")
+        } else {
+          $('#pesanErrorView').html(data)
+        }
+        $("#modalView").modal('hide');
+        tampilkan();
+        $("#tombolView").html('View')
+      }
+    });
+  }
 
   function tryHapus(id) {
     $("#hapus" + id).html('<i class="fas fa-spinner fa-pulse"></i>')

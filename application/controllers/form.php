@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class pendaftaran extends CI_Controller
+class form extends CI_Controller
 {
 
 	function __construct()
@@ -19,10 +19,10 @@ class pendaftaran extends CI_Controller
 		$this->template->load('template', 'pendaftaran_v');
 	}	
 	
-	public function tampil()
-	{
-		echo json_encode($this->db_model->all_data("swab_syamrabu")->result());
-	}
+	// public function tampil()
+	// {
+	// 	echo json_encode($this->db_model->all_data("swab_syamrabu")->result());
+	// }
 
 
 	// public function dataById($id)
@@ -33,18 +33,22 @@ class pendaftaran extends CI_Controller
 	// 	$this->load->view('form', $data);
 	// }
 
-	public function dataById($id)
-	{
+	// public function dataById($id)
+	// {
 
-		$query = "select * from swab_syamrabu where id=".($id);	
-		$data ['pasien'] = $this->db_model->get_query($query)->row_array();
-		$this->load->view('form', $data);
-	}
+	// 	$query = "select * from swab_syamrabu where id=".($id);	
+	// 	$data ['pasien'] = $this->db_model->get_query($query)->row_array();
+	// 	$this->load->view('form', $data);
+	// }
 	function edit_id()
 	{
 		echo json_encode($this->db_model->get_where($this->input->post("target"), ["id" => $this->input->post('id', TRUE)])->row_array());
 	}
-	
+
+	// function view_id()
+	// {
+	// 	echo json_encode($this->db_model->get_where($this->input->post("target"), ["id" => $this->input->post('id', TRUE)])->row_array());
+	// }
 
 	function open_form(){
 		$this->load->view('form');
