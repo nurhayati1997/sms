@@ -191,7 +191,7 @@
                               </div>
                             </div>
                             <div class="card-body px-lg-5 py-lg-5">
-                            <form class="form">
+                            				<form class="form">
 												<div class="card-body">
 													<div class="form-group row">
 														<div class="col-lg-4">
@@ -1571,8 +1571,8 @@
 													<div class="row">
 														<div class="col-lg-4"></div>
 														<div class="col-lg-8">
-															<button type="reset" onClick="tambah()" id="tombolTambah" class="btn btn-primary mr-2">Submit</button>
-															<button type="reset" class="btn btn-secondary">Cancel</button>
+															<!-- <button type="reset" onClick="tambah()" id="tombolTambah" class="btn btn-primary mr-2">Submit</button> -->
+															<button type="reset" class="btn btn-secondary">Close</button>
 														</div>
 													</div>
 												</div>
@@ -1680,8 +1680,10 @@
       dataType: 'json',
       success: function(data) {
         $("#modalView").modal('show')
-        $("#riwayat_demam").val(data.riwayat_demam)
+		$('input:radio[name=riwayat_demam][value='+data.riwayat_demam+']')[0].checked = true;
+        // $("#riwayat_demam").val(data.riwayat_demam)
         $("#nama").val(data.nama)
+		$('input:radio[name=jenis_swab][value='+data.jenis_swab+']')[0].checked = true;
         console.log(data)
         $("#view" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -1692,6 +1694,7 @@
     $("#tombolView").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
     var riwayat_demam = $("#riwayat_demam").val()
     var nama = $("#nama").val()
+    var jenis_awab = $("#jenis_swab").val()
     var id = $("#idUser").val()
     $.ajax({
       url: '<?= base_url() ?>pendaftaran/edit',
@@ -1699,14 +1702,16 @@
       data: {
         id: id,
         riwayat_demam: riwayat_demam,
-        nama: nama
+        nama: nama,
+        jenis_swab: jenis_swab
       },
       dataType: 'json',
       success: function(data) {
         if (data == "") {
           $("#idUser").val("")
-          $("#jenis_swab").val("")
+          $("#riwayat_demam").val("")
           $("#nama").val("")
+          $("#jenis_swab").val("")
         } else {
           $('#pesanErrorView').html(data)
         }
