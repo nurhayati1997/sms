@@ -1514,6 +1514,24 @@
         $("#rs_sebelumnya").val(data.rs_sebelumnya)
         $("#status_pasien_terakhir").val(data.status_pasien_terakhir)
         $("#tgl_meninggal").val(data.tgl_meninggal)
+        $("#riwayat_luar_negeri").val(data.riwayat_luar_negeri)
+        $("#negara_1").val(data.negara_1)
+        $("#kota_1").val(data.kota_1)
+        $("#tgl_negara_1").val(data.tgl_negara_1)
+        $("#tgl_tiba_negara_1").val(data.tgl_tiba_negara_1)
+        $("#negara_2").val(data.negara_2)
+        $("#kota_2").val(data.kota_2)
+        $("#tgl_negara_2").val(data.tgl_negara_2)
+        $("#tgl_tiba_negara_2").val(data.tgl_tiba_negara_2)
+        $("#riwayat_transmisi_lokal").val(data.riwayat_transmisi_lokal)
+        $("#provinsi_transmisi_1").val(data.provinsi_transmisi_1)
+        $("#kota_transmisi_1").val(data.kota_transmisi_1)
+        $("#tgl_transmisi_1").val(data.tgl_transmisi_1)
+        $("#tgl_tiba_transmisi_1").val(data.tgl_tiba_transmisi_1)
+        $("#provinsi_transmisi_2").val(data.provinsi_transmisi_2)
+        $("#kota_transmisi_2").val(data.kota_transmisi_2)
+        $("#tgl_transmisi_2").val(data.tgl_transmisi_2)
+        $("#tgl_tiba_transmisi_2").val(data.tgl_tiba_transmisi_2)
         console.log(data)
         $("#view" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -1571,6 +1589,24 @@
     var rs_sebelumnya = $("#rs_sebelumnya").val()
     var status_pasien_terakhir = $("#status_pasien_terakhir").val()
     var tgl_meninggal = $("#tgl_meninggal").val()
+    var riwayat_luar_negeri = $("#riwayat_luar_negeri").val()
+    var negara_1 = $("#negara_1").val()
+    var kota_1 = $("#kota_1").val()
+    var tgl_negara_1 = $("#tgl_negara_1").val()
+    var tgl_tiba_negara_1 = $("#tgl_tiba_negara_1").val()
+    var negara_2 = $("#negara_2").val()
+    var kota_2 = $("#kota_2").val()
+    var tgl_negara_2 = $("#tgl_negara_2").val()
+    var tgl_tiba_negara_2 = $("#tgl_tiba_negara_2").val()
+    var riwayat_transmisi_lokal = $("#riwayat_transmisi_lokal").val()
+    var provinsi_transmisi_1 = $("#provinsi_transmisi_1").val()
+    var kota_transmisi_1 = $("#kota_transmisi_1").val()
+    var tgl_transmisi_1 = $("#tgl_transmisi_1").val()
+    var tgl_tiba_transmisi_1 = $("#tgl_tiba_transmisi_1").val()
+    var provinsi_transmisi_2 = $("#provinsi_transmisi_2").val()
+    var kota_transmisi_2 = $("#kota_transmisi_2").val()
+    var tgl_transmisi_2 = $("#tgl_transmisi_2").val()
+    var tgl_tiba_transmisi_2 = $("#tgl_tiba_transmisi_2").val()
     var id = $("#idUser").val()
     $.ajax({
       url: '<?= base_url() ?>pendaftaran/edit',
@@ -1624,7 +1660,25 @@
         penggunaan_emco: penggunaan_emco,
         rs_sebelumnya: rs_sebelumnya,
         status_pasien_terakhir: status_pasien_terakhir,
-        tgl_meninggal: tgl_meninggal
+        tgl_meninggal: tgl_meninggal,
+        riwayat_luar_negeri: riwayat_luar_negeri,
+        negara_1: negara_1,
+        kota_1: kota_1,
+        tgl_negara_1: tgl_negara_1,
+        tgl_tiba_negara_1: tgl_tiba_negara_1,
+        negara_2: negara_2,
+        kota_2: kota_2,
+        tgl_negara_2: tgl_negara_2,
+        tgl_tiba_negara_2: tgl_tiba_negara_2,
+        riwayat_transmisi_lokal: riwayat_transmisi_lokal,
+        provinsi_transmisi_1: provinsi_transmisi_1,
+        kota_transmisi_1: kota_transmisi_1,
+        tgl_transmisi_1: tgl_transmisi_1,
+        tgl_tiba_transmisi_1: tgl_tiba_transmisi_1,
+        provinsi_transmisi_2: provinsi_transmisi_2,
+        kota_transmisi_2: kota_transmisi_2,
+        tgl_transmisi_2: tgl_transmisi_2,
+        tgl_tiba_transmisi_2: tgl_tiba_transmisi_2
       },
       dataType: 'json',
       success: function(data) {
@@ -1679,6 +1733,24 @@
           $("#rs_sebelumnya").val("")
           $("#status_pasien_terakhir").val("")
           $("#tgl_meninggal").val("")
+          $("#riwayat_luar_negeri").val("")
+          $("#negara_1").val("")
+          $("#kota_1").val("")
+          $("#tgl_negara_1").val("")
+          $("#tgl_tiba_negara_1").val("")
+          $("#negara_2").val("")
+          $("#kota_2").val("")
+          $("#tgl_negara_2").val("")
+          $("#tgl_tiba_negara_2").val("")
+          $("#riwayat_transmisi_lokal").val("")
+          $("#provinsi_transmisi_1").val("")
+          $("#kota_transmisi_1").val("")
+          $("#tgl_transmisi_1").val("")
+          $("#tgl_tiba_transmisi_1").val("")
+          $("#provinsi_transmisi_2").val("")
+          $("#kota_transmisi_2").val("")
+          $("#tgl_transmisi_2").val("")
+          $("#tgl_tiba_transmisi_2").val("")
         } else {
           $('#pesanErrorView').html(data)
         }
