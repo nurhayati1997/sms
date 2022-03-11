@@ -1480,6 +1480,40 @@
         $("#kec").val(data.nama)
         $("#kab").val(data.nama)
         $("#no_hp").val(data.no_hp)
+        $("#derajat_demam").val(data.derajat_demam)
+        $("#riwayat_batuk").val(data.riwayat_batuk)
+        $("#riwayat_pilek").val(data.riwayat_pilek)
+        $("#riwayat_sakit_tenggorokan").val(data.riwayat_sakit_tenggorokan)
+        $("#riwayat_sakit_kepala").val(data.riwayat_sakit_kepala)
+        $("#lemah").val(data.lemah)
+        $("#nyeri_otot").val(data.nyeri_otot)
+        $("#mual").val(data.mual)
+        $("#abdomen").val(data.abdomen)
+        $("#diare").val(data.diare)
+        $("#hamil").val(data.hamil)
+        $("#diabetes").val(data.diabetes)
+        $("#jantung").val(data.jantung)
+        $("#hipertensi").val(data.hipertensi)
+        $("#keganasan").val(data.keganasan)
+        $("#gangguan_imunologi").val(data.gangguan_imunologi)
+        $("#gagal_ginjal").val(data.gagal_ginjal)
+        $("#gangguan_hati").val(data.gangguan_hati)
+        $("#ppok").val(data.ppok)
+        $("#kondisi_penyerta_lain").val(data.kondisi_penyerta_lain)
+        $("#pneumonia").val(data.pneumonia)
+        $("#ards").val(data.ards)
+        $("#diagnosis_lain").val(data.diagnosis_lain)
+        $("#etiologi").val(data.etiologi)
+        $("#diagnosis_pernafasan_lain").val(data.diagnosis_pernafasan_lain)
+        $("#rawat_rs").val(data.rawat_rs)
+        $("#rs_terakhir").val(data.rs_terakhir)
+        $("#tgl_masuk_rs").val(data.tgl_masuk_rs)
+        $("#rawat_icu").val(data.rawat_icu)
+        $("#tindakan_intubasi").val(data.tindakan_intubasi)
+        $("#penggunaan_emco").val(data.penggunaan_emco)
+        $("#rs_sebelumnya").val(data.rs_sebelumnya)
+        $("#status_pasien_terakhir").val(data.status_pasien_terakhir)
+        $("#tgl_meninggal").val(data.tgl_meninggal)
         console.log(data)
         $("#view" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -1503,6 +1537,40 @@
     var kec = $("#kec").val()
     var kab = $("#kab").val()
     var no_hp = $("#no_hp").val()
+    var derajat_demam = $("#derajat_demam").val()
+    var riwayat_batuk = $("#riwayat_batuk").val()
+    var riwayat_pilek = $("#riwayat_pilek").val()
+    var riwayat_sakit_tenggorokan = $("#riwayat_sakit_tenggorokan").val()
+    var riwayat_sakit_kepala = $("#riwayat_sakit_kepala").val()
+    var lemah = $("#lemah").val()
+    var nyeri_otot = $("#nyeri_otot").val()
+    var mual = $("#mual").val()
+    var abdomen = $("#abdomen").val()
+    var diare = $("#diare").val()
+    var hamil = $("#hamil").val()
+    var diabetes = $("#diabetes").val()
+    var jantung = $("#jantung").val()
+    var hipertensi = $("#hipertensi").val()
+    var keganasan = $("#keganasan").val()
+    var gangguan_imunologi = $("#gangguan_imunologi").val()
+    var gagal_ginjal = $("#gagal_ginjal").val()
+    var gangguan_hati = $("#gangguan_hati").val()
+    var ppok = $("#ppok").val()
+    var kondisi_penyerta_lain = $("#kondisi_penyerta_lain").val()
+    var pneumonia = $("#pneumonia").val()
+    var ards = $("#ards").val()
+    var diagnosis_lain = $("#diagnosis_lain").val()
+    var etiologi = $("#etiologi").val()
+    var diagnosis_pernafasan_lain = $("#diagnosis_pernafasan_lain").val()
+    var rawat_rs = $("#rawat_rs").val()
+    var rs_terakhir = $("#rs_terakhir").val()
+    var tgl_masuk_rs = $("#tgl_masuk_rs").val()
+    var rawat_icu = $("#rawat_icu").val()
+    var tindakan_intubasi = $("#tindakan_intubasi").val()
+    var penggunaan_emco = $("#penggunaan_emco").val()
+    var rs_sebelumnya = $("#rs_sebelumnya").val()
+    var status_pasien_terakhir = $("#status_pasien_terakhir").val()
+    var tgl_meninggal = $("#tgl_meninggal").val()
     var id = $("#idUser").val()
     $.ajax({
       url: '<?= base_url() ?>pendaftaran/edit',
@@ -1522,7 +1590,41 @@
         desa: desa,
         kec: kec,
         kab: kab,
-        no_hp: no_hp
+        no_hp: no_hp,
+        derajat_demam: derajat_demam,
+        riwayat_batuk: riwayat_batuk,
+        riwayat_pilek: riwayat_pilek,
+        riwayat_sakit_tenggorokan: riwayat_sakit_tenggorokan,
+        riwayat_sakit_kepala: riwayat_sakit_kepala,
+        lemah: lemah,
+        nyeri_otot: nyeri_otot,
+        mual: mual,
+        abdomen: abdomen,
+        diare: diare,
+        hamil: hamil,
+        diabetes: diabetes,
+        jantung: jantung,
+        hipertensi: hipertensi,
+        keganasan: keganasan,
+        gangguan_imunologi: gangguan_imunologi,
+        gagal_ginjal: gagal_ginjal,
+        gangguan_hati: gangguan_hati,
+        ppok: ppok,
+        kondisi_penyerta_lain: kondisi_penyerta_lain,
+        pneumonia: pneumonia,
+        ards: ards,
+        diagnosis_lain: diagnosis_lain,
+        etiologi: etiologi,
+        diagnosis_pernafasan_lain: diagnosis_pernafasan_lain,
+        rawat_rs: rawat_rs,
+        rs_terakhir: rs_terakhir,
+        tgl_masuk_rs: tgl_masuk_rs,
+        rawat_icu: rawat_icu,
+        tindakan_intubasi: tindakan_intubasi,
+        penggunaan_emco: penggunaan_emco,
+        rs_sebelumnya: rs_sebelumnya,
+        status_pasien_terakhir: status_pasien_terakhir,
+        tgl_meninggal: tgl_meninggal
       },
       dataType: 'json',
       success: function(data) {
@@ -1543,6 +1645,40 @@
           $("#kec").val("")
           $("#kab").val("")
           $("#no_hp").val("")
+          $("#derajat_demam").val("")
+          $("#riwayat_batuk").val("")
+          $("#riwayat_pilek").val("")
+          $("#riwayat_sakit_tenggorokan").val("")
+          $("#riwayat_sakit_kepala").val("")
+          $("#lemah").val("")
+          $("#nyeri_otot").val("")
+          $("#mual").val("")
+          $("#abdomen").val("")
+          $("#diare").val("")
+          $("#hamil").val("")
+          $("#diabetes").val("")
+          $("#jantung").val("")
+          $("#hipertensi").val("")
+          $("#keganasan").val("")
+          $("#gangguan_imunologi").val("")
+          $("#gagal_ginjal").val("")
+          $("#gangguan_hati").val("")
+          $("#ppok").val("")
+          $("#kondisi_penyerta_lain").val("")
+          $("#pneumonia").val("")
+          $("#ards").val("")
+          $("#diagnosis_lain").val("")
+          $("#etiologi").val("")
+          $("#diagnosis_pernafasan_lain").val("")
+          $("#rawat_rs").val("")
+          $("#rs_terakhir").val("")
+          $("#tgl_masuk_rs").val("")
+          $("#rawat_icu").val("")
+          $("#tindakan_intubasi").val("")
+          $("#penggunaan_emco").val("")
+          $("#rs_sebelumnya").val("")
+          $("#status_pasien_terakhir").val("")
+          $("#tgl_meninggal").val("")
         } else {
           $('#pesanErrorView').html(data)
         }
