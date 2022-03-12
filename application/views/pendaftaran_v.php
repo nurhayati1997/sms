@@ -10,87 +10,6 @@
 											<h3 class="card-label">Data Pendaftaran SWAB  
 											<span class="d-block text-muted pt-2 font-size-sm">UOBK RSUD SYAMRABU BANGKALAN</span></h3>
 										</div>
-										<div class="card-toolbar">
-											<!--begin::Dropdown-->
-											<div class="dropdown dropdown-inline mr-2">
-												<button type="button" class="btn btn-light-primary font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<span class="svg-icon svg-icon-md">
-													<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Design/PenAndRuller.svg-->
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-															<rect x="0" y="0" width="24" height="24" />
-															<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-															<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
-														</g>
-													</svg>
-													<!--end::Svg Icon-->
-												</span>Export</button>
-												<!--begin::Dropdown Menu-->
-												<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-													<!--begin::Navigation-->
-													<ul class="navi flex-column navi-hover py-2">
-														<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">Choose an option:</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-print"></i>
-																</span>
-																<span class="navi-text">Print</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-copy"></i>
-																</span>
-																<span class="navi-text">Copy</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-file-excel-o"></i>
-																</span>
-																<span class="navi-text">Excel</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-file-text-o"></i>
-																</span>
-																<span class="navi-text">CSV</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-file-pdf-o"></i>
-																</span>
-																<span class="navi-text">PDF</span>
-															</a>
-														</li>
-													</ul>
-													<!--end::Navigation-->
-												</div>
-												<!--end::Dropdown Menu-->
-											</div>
-											<!--end::Dropdown-->
-											<!--begin::Button-->
-											<a href="#" class="btn btn-primary font-weight-bolder">
-											<span class="svg-icon svg-icon-md">
-												<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Design/Flatten.svg-->
-												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-													<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-														<rect x="0" y="0" width="24" height="24" />
-														<circle fill="#000000" cx="9" cy="15" r="6" />
-														<path d="M8.8012943,7.00241953 C9.83837775,5.20768121 11.7781543,4 14,4 C17.3137085,4 20,6.6862915 20,10 C20,12.2218457 18.7923188,14.1616223 16.9975805,15.1987057 C16.9991904,15.1326658 17,15.0664274 17,15 C17,10.581722 13.418278,7 9,7 C8.93357256,7 8.86733422,7.00080962 8.8012943,7.00241953 Z" fill="#000000" opacity="0.3" />
-													</g>
-												</svg>
-												<!--end::Svg Icon-->
-											</span>New Record</a>
-											<!--end::Button-->
-										</div>
 									</div>
 									<div class="card-body">
 										<!--begin: Datatable-->
@@ -154,17 +73,16 @@
                           <div class="card bg-secondary border-0 mb-0">
                             <div class="card-header bg-success pb-1">
                               <div class="text-muted text-center mt-2 mb-3">
-                                <span class="text-muted text-white">Form Edit Status Pelayanan </span>
+                                <span class="text-muted text-black">Form Edit Status Pelayanan </span>
                               </div>
                             </div>
                             <div class="card-body px-lg-5 py-lg-5">
                               <form role="form">
                                 <div class="form-group mb-3">
                                   <input id="idUser" type="hidden">
-                                  <!-- <label class="form-control-label" for="exampleFormControlSelect1">Pendengaran</label> -->
                                   <select class="form-control" id="status">
-                                    <option value="0">Belum dilayani</option>
-                                    <option value="1">Sudah diLayani</option>
+                                    <option value="Belum dilayani"> Belum dilayani</option>
+                                    <option value="Sudah dilayani">Sudah diLayani</option>
                                   </select>
                                 </div>
                                 <div class="badge badge-danger" id="pesanErrorEdit"></div>
@@ -1532,6 +1450,55 @@
         $("#kota_transmisi_2").val(data.kota_transmisi_2)
         $("#tgl_transmisi_2").val(data.tgl_transmisi_2)
         $("#tgl_tiba_transmisi_2").val(data.tgl_tiba_transmisi_2)
+        $("#riwayat_ketransmisi_lokal").val(data.riwayat_ketransmisi_lokal)
+        $("#provinsi_ketransmisi").val(data.provinsi_ketransmisi)
+        $("#kota_ketransmisi").val(data.kota_ketransmisi)
+        $("#riwayat_kontak_suspek").val(data.riwayat_kontak_suspek)
+        $("#nama_suspek_1").val(data.nama_suspek_1)
+        $("#alamat_suspek_1").val(data.alamat_suspek_1)
+        $("#hubungan_suspek_1").val(data.hubungan_suspek_1)
+        $("#tgl_kontak_suspek_1").val(data.tgl_kontak_suspek_1)
+        $("#tgl_terakhir_kontak_suspek_1").val(data.tgl_terakhir_kontak_suspek_1)
+        $("#riwayat_kontak_konfirm").val(data.riwayat_kontak_konfirm)
+        $("#nama_konfirm_1").val(data.nama_konfirm_1)
+        $("#alamat_konfirm_1").val(data.alamat_konfirm_1)
+        $("#hubungan_konfirm_1").val(data.hubungan_konfirm_1)
+        $("#tgl_kontak_konfirm_1").val(data.tgl_kontak_konfirm_1)
+        $("#tgl_terakhir_kontak_konfirm_1").val(data.tgl_terakhir_kontak_konfirm_1)
+        $("#ispa").val(data.ispa)
+        $("#jenis_hewan_peliharaan").val(data.jenis_hewan_peliharaan)
+        $("#petugas_kesehatan").val(data.petugas_kesehatan)
+        $("#apd").val(data.apd)
+        $("#aerosol").val(data.aerosol)
+        $("#sebutkan_aerosol").val(data.sebutkan_aerosol)
+        $("#nama_kasus_1").val(data.nama_kasus_1)
+        $("#umur_kasus_1").val(data.umur_kasus_1)
+        $("#jk_kasus_1").val(data.jk_kasus_1)
+        $("#hubungan_kasus_1").val(data.hubungan_kasus_1)
+        $("#alamat_kasus_1").val(data.alamat_kasus_1)
+        $("#hp_kasus_1").val(data.hp_kasus_1)
+        $("#aktifitas_kasus_1").val(data.aktifitas_kasus_1)
+        $("#nama_kasus_2").val(data.nama_kasus_2)
+        $("#umur_kasus_2").val(data.umur_kasus_2)
+        $("#jk_kasus_2").val(data.jk_kasus_2)
+        $("#hubungan_kasus_2").val(data.hubungan_kasus_2)
+        $("#alamat_kasus_2").val(data.alamat_kasus_2)
+        $("#hp_kasus_2").val(data.hp_kasus_2)
+        $("#aktifitas_kasus_2").val(data.aktifitas_kasus_2)
+        $("#nama_kasus_3").val(data.nama_kasus_3)
+        $("#umur_kasus_3").val(data.umur_kasus_3)
+        $("#jk_kasus_3").val(data.jk_kasus_3)
+        $("#hubungan_kasus_3").val(data.hubungan_kasus_3)
+        $("#alamat_kasus_3").val(data.alamat_kasus_3)
+        $("#hp_kasus_3").val(data.hp_kasus_3)
+        $("#aktifitas_kasus_3").val(data.aktifitas_kasus_3)
+        $("#nama_kasus_4").val(data.nama_kasus_4)
+        $("#umur_kasus_4").val(data.umur_kasus_4)
+        $("#jk_kasus_4").val(data.jk_kasus_4)
+        $("#hubungan_kasus_4").val(data.hubungan_kasus_4)
+        $("#alamat_kasus_4").val(data.alamat_kasus_4)
+        $("#hp_kasus_4").val(data.hp_kasus_4)
+        $("#aktifitas_kasus_4").val(data.aktifitas_kasus_4)
         console.log(data)
         $("#view" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -1607,6 +1574,55 @@
     var kota_transmisi_2 = $("#kota_transmisi_2").val()
     var tgl_transmisi_2 = $("#tgl_transmisi_2").val()
     var tgl_tiba_transmisi_2 = $("#tgl_tiba_transmisi_2").val()
+    var riwayat_ketransmisi_lokal = $("#riwayat_ketransmisi_lokal").val()
+    var provinsi_ketransmisi = $("#provinsi_ketransmisi").val()
+    var kota_ketransmisi = $("#kota_ketransmisi").val()
+    var riwayat_kontak_suspek = $("#riwayat_kontak_suspek").val()
+    var nama_suspek_1 = $("#nama_suspek_1").val()
+    var alamat_suspek_1 = $("#alamat_suspek_1").val()
+    var hubungan_suspek_1 = $("#hubungan_suspek_1").val()
+    var tgl_kontak_suspek_1 = $("#tgl_kontak_suspek_1").val()
+    var tgl_terakhir_kontak_suspek_1 = $("#tgl_terakhir_kontak_suspek_1").val()
+    var riwayat_kontak_konfirm = $("#riwayat_kontak_konfirm").val()
+    var nama_konfirm_1 = $("#nama_konfirm_1").val()
+    var alamat_konfirm_1 = $("#alamat_konfirm_1").val()
+    var hubungan_konfirm_1 = $("#hubungan_konfirm_1").val()
+    var tgl_kontak_konfirm_1 = $("#tgl_kontak_konfirm_1").val()
+    var tgl_terakhir_kontak_konfirm_1 = $("#tgl_terakhir_kontak_konfirm_1").val()
+    var hewan_peliharaan = $("#hewan_peliharaan").val()
+    var jenis_hewan_peliharaan = $("#jenis_hewan_peliharaan").val()
+    var petugas_kesehatan = $("#petugas_kesehatan").val()
+    var apd = $("#apd").val()
+    var aerosol = $("#aerosol").val()
+    var sebutkan_aerosol = $("#sebutkan_aerosol").val()
+    var nama_kasus_1 = $("#nama_kasus_1").val()
+    var umur_kasus_1 = $("#umur_kasus_1").val()
+    var jk_kasus_1 = $("#jk_kasus_1").val()
+    var hubungan_kasus_1 = $("#hubungan_kasus_1").val()
+    var alamat_kasus_1 = $("#alamat_kasus_1").val()
+    var hp_kasus_1 = $("#hp_kasus_1").val()
+    var aktifitas_kasus_1 = $("#aktifitas_kasus_1").val()
+    var nama_kasus_2 = $("#nama_kasus_2").val()
+    var umur_kasus_2 = $("#umur_kasus_2").val()
+    var jk_kasus_2 = $("#jk_kasus_2").val()
+    var hubungan_kasus_2 = $("#hubungan_kasus_2").val()
+    var alamat_kasus_2 = $("#alamat_kasus_2").val()
+    var hp_kasus_2 = $("#hp_kasus_2").val()
+    var aktifitas_kasus_2 = $("#aktifitas_kasus_2").val()
+    var nama_kasus_3 = $("#nama_kasus_3").val()
+    var umur_kasus_3 = $("#umur_kasus_3").val()
+    var jk_kasus_3 = $("#jk_kasus_3").val()
+    var hubungan_kasus_3 = $("#hubungan_kasus_3").val()
+    var alamat_kasus_3 = $("#alamat_kasus_3").val()
+    var hp_kasus_3 = $("#hp_kasus_3").val()
+    var aktifitas_kasus_3 = $("#aktifitas_kasus_3").val()
+    var nama_kasus_4 = $("#nama_kasus_4").val()
+    var umur_kasus_4 = $("#umur_kasus_4").val()
+    var jk_kasus_4 = $("#jk_kasus_4").val()
+    var hubungan_kasus_4 = $("#hubungan_kasus_4").val()
+    var alamat_kasus_4 = $("#alamat_kasus_4").val()
+    var hp_kasus_4 = $("#hp_kasus_4").val()
+    var aktifitas_kasus_4 = $("#aktifitas_kasus_4").val()
     var id = $("#idUser").val()
     $.ajax({
       url: '<?= base_url() ?>pendaftaran/edit',
@@ -1678,7 +1694,56 @@
         provinsi_transmisi_2: provinsi_transmisi_2,
         kota_transmisi_2: kota_transmisi_2,
         tgl_transmisi_2: tgl_transmisi_2,
-        tgl_tiba_transmisi_2: tgl_tiba_transmisi_2
+        tgl_tiba_transmisi_2: tgl_tiba_transmisi_2,
+        riwayat_ketransmisi_lokal: riwayat_ketransmisi_lokal,
+        provinsi_ketransmisi: provinsi_ketransmisi,
+        kota_ketransmisi: kota_ketransmisi,
+        riwayat_kontak_suspek: riwayat_kontak_suspek,
+        nama_suspek_1: nama_suspek_1,
+        alamat_suspek_1: alamat_suspek_1,
+        hubungan_suspek_1: hubungan_suspek_1,
+        tgl_kontak_suspek_1: tgl_kontak_suspek_1,
+        tgl_terakhir_kontak_suspek_1: tgl_terakhir_kontak_suspek_1,
+        riwayat_kontak_konfirm: riwayat_kontak_konfirm,
+        nama_konfirm_1: nama_konfirm_1,
+        alamat_konfirm_1: alamat_konfirm_1,
+        hubungan_konfirm_1: hubungan_konfirm_1,
+        tgl_kontak_konfirm_1: tgl_kontak_konfirm_1,
+        tgl_terakhir_kontak_konfirm_1: tgl_terakhir_kontak_konfirm_1,
+        hewan_peliharaan: hewan_peliharaan,
+        jenis_hewan_peliharaan: jenis_hewan_peliharaan,
+        petugas_kesehatan: petugas_kesehatan,
+        apd: apd,
+        aerosol: aerosol,
+        sebutkan_aerosol: sebutkan_aerosol,
+        nama_kasus_1: nama_kasus_1,
+        umur_kasus_1: umur_kasus_1,
+        jk_kasus_1: jk_kasus_1,
+        hubungan_kasus_1: hubungan_kasus_1,
+        alamat_kasus_1: alamat_kasus_1,
+        hp_kasus_1: hp_kasus_1,
+        aktifitas_kasus_1: aktifitas_kasus_1,
+        nama_kasus_2: nama_kasus_2,
+        umur_kasus_2: umur_kasus_2,
+        jk_kasus_2: jk_kasus_2,
+        hubungan_kasus_2: hubungan_kasus_2,
+        alamat_kasus_2: alamat_kasus_2,
+        hp_kasus_2: hp_kasus_2,
+        aktifitas_kasus_2: aktifitas_kasus_2,
+        nama_kasus_3: nama_kasus_3,
+        umur_kasus_3: umur_kasus_3,
+        jk_kasus_3: jk_kasus_3,
+        hubungan_kasus_3: hubungan_kasus_3,
+        alamat_kasus_3: alamat_kasus_3,
+        hp_kasus_3: hp_kasus_3,
+        aktifitas_kasus_3: aktifitas_kasus_3,
+        nama_kasus_4: nama_kasus_4,
+        umur_kasus_4: umur_kasus_4,
+        jk_kasus_4: jk_kasus_4,
+        hubungan_kasus_4: hubungan_kasus_4,
+        alamat_kasus_4: alamat_kasus_4,
+        hp_kasus_4: hp_kasus_4,
+        aktifitas_kasus_4: aktifitas_kasus_4
       },
       dataType: 'json',
       success: function(data) {
@@ -1751,6 +1816,55 @@
           $("#kota_transmisi_2").val("")
           $("#tgl_transmisi_2").val("")
           $("#tgl_tiba_transmisi_2").val("")
+          $("#riwayat_ketransmisi_lokal").val("")
+          $("#provinsi_ketransmisi").val("")
+          $("#kota_ketransmisi").val("")
+          $("#riwayat_kontak_suspek").val("")
+          $("#nama_suspek_1").val("")
+          $("#alamat_suspek_1").val("")
+          $("#hubungan_suspek_1").val("")
+          $("#tgl_kontak_suspek_1").val("")
+          $("#tgl_terakhir_kontak_suspek_1").val("")
+          $("#riwayat_kontak_konfirm").val("")
+          $("#nama_konfirm_1").val("")
+          $("#alamat_konfirm_1").val("")
+          $("#hubungan_konfirm_1").val("")
+          $("#tgl_kontak_konfirm_1").val("")
+          $("#tgl_terakhir_kontak_konfirm_1").val("")
+          $("#hewan_peliharaan").val("")
+          $("#jenis_hewan_peliharaan").val("")
+          $("#petugas_kesehatan").val("")
+          $("#apd").val("")
+          $("#aerosol").val("")
+          $("#sebutkan_aerosol").val("")
+          $("#nama_kasus_1").val("")
+          $("#umur_kasus_1").val("")
+          $("#jk_kasus_1").val("")
+          $("#hubungan_kasus_1").val("")
+          $("#alamat_kasus_1").val("")
+          $("#hp_kasus_1").val("")
+          $("#aktifitas_kasus_1").val("")
+          $("#nama_kasus_2").val("")
+          $("#umur_kasus_2").val("")
+          $("#jk_kasus_2").val("")
+          $("#hubungan_kasus_2").val("")
+          $("#alamat_kasus_2").val("")
+          $("#hp_kasus_2").val("")
+          $("#aktifitas_kasus_2").val("")
+          $("#nama_kasus_3").val("")
+          $("#umur_kasus_3").val("")
+          $("#jk_kasus_3").val("")
+          $("#hubungan_kasus_3").val("")
+          $("#alamat_kasus_3").val("")
+          $("#hp_kasus_3").val("")
+          $("#aktifitas_kasus_3").val("")
+          $("#nama_kasus_4").val("")
+          $("#umur_kasus_4").val("")
+          $("#jk_kasus_4").val("")
+          $("#hubungan_kasus_4").val("")
+          $("#alamat_kasus_4").val("")
+          $("#hp_kasus_4").val("")
+          $("#aktifitas_kasus_4").val("")
         } else {
           $('#pesanErrorView').html(data)
         }
