@@ -7,7 +7,7 @@
 								<div class="card card-custom gutter-b">
 									<div class="card-header flex-wrap border-0 pt-6 pb-0">
 										<div class="card-title">
-											<h3 class="card-label">Data Pendaftaran SWAB  
+											<h3 class="card-label">Data SWAB Sudah dilayani
 											<span class="d-block text-muted pt-2 font-size-sm">UOBK RSUD SYAMRABU BANGKALAN</span></h3>
 										</div>
 									</div>
@@ -1295,26 +1295,26 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tgl Daftar</th><th>Nama</th><th>Jenis Swab</th><th>Status</th><th>NIK</th><th>No Hp</th><th>Umur</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>NO</th><th>Tgl Daftar</th><th>Status</th><th>Nama</th><th>Jenis Swab</th><th>Umur</th><th>No Hp</th><th>NIK</th></tr></thead>'
       $.ajax({
         type:'POST',
-        url: '<?= base_url() ?>pendaftaran/tampil',
+        url: '<?= base_url() ?>sudah_dilayani/tampil',
         dataType :'json',
         success: function(data){
          //console.log(data);
           for (let i = 0; i < data.length; i++) {
             baris += '<tr>'
-            baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
-            baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
+            // baris += '<td><div style="cursor:pointer;" title="hapus?" id="hapus' + data[i].id + '" onClick="tryHapus(' + data[i].id+ ')"><i class="flaticon-delete text-danger"></i></div>'
+            // baris += ' <div style="cursor:pointer;" title="edit?"  id="edit' + data[i].id + '" onClick="tryEdit(' + data[i].id+ ')"><i class="flaticon2-pen text-success"></i></div>'
+            // baris += ' <div style="cursor:pointer;" title="view?" id="cetak' + data[i].id + '" onClick="tryView(' + data[i].id+ ')"><i class="flaticon-eye text-primary"></i></div>'
             baris += '<td>' + (i + 1) + '</td>'
             baris += '<td>' + data[i].tgl_daftar_swab + '</td>'
+            baris += '<td>' + data[i].status + '</td>'
             baris += '<td>' + data[i].nama + '</td>'
             baris += '<td>' + data[i].jenis_swab + '</td>'
-            baris += '<td>' + data[i].status + '</td>'
-            baris += '<td>' + data[i].nik + '</td>'
-            baris += '<td>' + data[i].no_hp + '</td>'
             baris += '<td>' + data[i].umur + '</td>'
+            baris += '<td>' + data[i].no_hp + '</td>'
+            baris += '<td>' + data[i].nik + '</td>'
             baris += '</td></tr>'
           }
           baris += '</tbody></table>'
@@ -1377,7 +1377,7 @@
     $("#tombolView" + id).html('<i class="fas fa-spinner fa-pulse"></i>')
     $("#idUser").val(id)
     $.ajax({
-      url: '<?= base_url() ?>pendaftaran/edit_id',
+      url: '<?= base_url() ?>belum_dilayani/edit_id',
       method: 'post',
       data: "target=swab_syamrabu&id=" + id,
       dataType: 'json',

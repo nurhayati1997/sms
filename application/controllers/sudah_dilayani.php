@@ -21,7 +21,7 @@ class sudah_dilayani extends CI_Controller
 	
 	public function tampil()
 	{
-		echo json_encode($this->db_model->ambil_data("swab_syamrabu")->result());
+		echo json_encode($this->db_model->all_data("v_swab_sudah_dilayani")->result());
 	}
 
 
