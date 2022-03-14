@@ -122,6 +122,14 @@
                                     </select>
                                   </div>
                                   <div class="col-lg-4">
+                                    <!-- <label>Jenis:</label> -->
+                                    <span class="form-text text-muted">Tujuan Test SWAB</span>
+                                    <select class="form-control" id="tujuan_swab">
+                                      <option value="Screening/Diagnosa">Screening/Diagnosa</option>
+                                      <option value="Perjalanan">Perjalanan</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-4">
                                     <label>A. IDENTITAS PASIEN:</label>
                                     <span class="form-text text-muted">Mohon Masukkan Nama Lengkap Anda</span>
                                     <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" disabled />
@@ -1277,6 +1285,33 @@
                                     </div>
                                   </div>
                                 </div>
+
+                                <!-- vaksin -->
+													
+                              <div class="form-group row">
+                                <div class="col-lg-4">
+                                  <label>E. VAKSIN:</label>
+                                  <span class="form-text text-muted">Apakah Sudah Vaksin 1 ?</span>
+                                  <select class="form-control" id="vaksin1">
+                                    <option value="Ya">Ya</option>
+                                    <option value="Tidak">Tidak</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-4">
+                                  <span class="form-text text-muted">Apakah Sudah Vaksin 2 ?</span>
+                                  <select class="form-control" id="vaksin2">
+                                    <option value="Ya">Ya</option>
+                                    <option value="Tidak">Tidak</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-4">
+                                  <span class="form-text text-muted">Apakah sudah Booster ?</span>
+                                  <select class="form-control" id="booster">
+                                    <option value="Ya">Ya</option>
+                                    <option value="Tidak">Tidak</option>
+                                  </select>
+                                </div>
+                              </div>
                               </div>
                             </form>
                             <!--end::Form-->
@@ -1499,6 +1534,9 @@
         $("#alamat_kasus_4").val(data.alamat_kasus_4)
         $("#hp_kasus_4").val(data.hp_kasus_4)
         $("#aktifitas_kasus_4").val(data.aktifitas_kasus_4)
+        $("#vaksin1").val(data.vaksin1)
+        $("#vaksin2").val(data.vaksin2)
+        $("#booster").val(data.booster)
         console.log(data)
         $("#view" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -1623,6 +1661,9 @@
     var alamat_kasus_4 = $("#alamat_kasus_4").val()
     var hp_kasus_4 = $("#hp_kasus_4").val()
     var aktifitas_kasus_4 = $("#aktifitas_kasus_4").val()
+    var vaksin1 = $("#vaksin1").val()
+    var vaksin2 = $("#vaksin2").val()
+    var booster = $("#booster").val()
     var id = $("#idUser").val()
     $.ajax({
       url: '<?= base_url() ?>pendaftaran/edit',
@@ -1743,7 +1784,10 @@
         hubungan_kasus_4: hubungan_kasus_4,
         alamat_kasus_4: alamat_kasus_4,
         hp_kasus_4: hp_kasus_4,
-        aktifitas_kasus_4: aktifitas_kasus_4
+        aktifitas_kasus_4: aktifitas_kasus_4,
+        vaksin1: vaksin1,
+        vaksin2: vaksin2,
+        booster: booster
       },
       dataType: 'json',
       success: function(data) {
@@ -1865,6 +1909,9 @@
           $("#alamat_kasus_4").val("")
           $("#hp_kasus_4").val("")
           $("#aktifitas_kasus_4").val("")
+          $("#vaksin1").val("")
+          $("#vaksin2").val("")
+          $("#booster").val("")
         } else {
           $('#pesanErrorView').html(data)
         }
