@@ -54,7 +54,8 @@ class pendaftaran extends CI_Controller
 	public function edit()
 	{
 		$data = [
-			"status" => $this->input->post("status", TRUE)
+			"status" => $this->input->post("status", TRUE),
+			"tgl_sudah_dilayani" => $this->input->post("tgl_sudah_dilayani", TRUE)
 		];
 		$this->db_model->update('swab_syamrabu', $data, ["id" => $this->input->post("id")]);
 		echo json_encode("");

@@ -85,6 +85,10 @@
                                     <option value="Sudah dilayani">Sudah diLayani</option>
                                   </select>
                                 </div>
+                                <div class="form-group mb-3">
+                                  <span class="form-text text-muted">Masukkan Tgl Pelayanan</span>
+                                  <input type="date" class="form-control" id="tgl_sudah_dilayani" placeholder="Tgl Sudah dilayani" />
+                                </div>
                                 <div class="badge badge-danger" id="pesanErrorEdit"></div>
                                 <div class="text-center">
                                   <button type="button" onClick="edit()" id="tombolEdit" class="btn btn-success my-2">Tambah</button>
@@ -1330,7 +1334,7 @@
 
   function tampilkan(){
     $("#tempatTabel").html('<i class="fas fa-spinner fa-pulse"></i> Memuat...')
-    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tgl Daftar</th><th>Nama</th><th>Jenis Swab</th><th>Status</th><th>NIK</th><th>No Hp</th><th>Umur</th></tr></thead>'
+    var baris = '<table class="table table-separate table-head-custom table-checkable" id="tabelUser"><thead class="thead-light"><tr><th>Action</th><th>NO</th><th>Tgl Daftar</th><th>Nama</th><th>Jenis Swab</th><th>Status</th><th>Tgl Pelayanan</th><th>NIK</th><th>No Hp</th><th>Umur</th></tr></thead>'
       $.ajax({
         type:'POST',
         url: '<?= base_url() ?>pendaftaran/tampil',
@@ -1347,6 +1351,7 @@
             baris += '<td>' + data[i].nama + '</td>'
             baris += '<td>' + data[i].jenis_swab + '</td>'
             baris += '<td>' + data[i].status + '</td>'
+            baris += '<td>' + data[i].tgl_sudah_dilayani + '</td>'
             baris += '<td>' + data[i].nik + '</td>'
             baris += '<td>' + data[i].no_hp + '</td>'
             baris += '<td>' + data[i].umur + '</td>'
@@ -1376,6 +1381,7 @@
       success: function(data) {
         $("#modalEdit").modal('show')
         $("#status").val(data.status)
+        $("#tgl_sudah_dilayani").val(data.tgl_sudah_dilayani)
         console.log(data)
         $("#edit" + id).html('<i class="fa fa-edit"></i>')
       }
@@ -1385,19 +1391,22 @@
   function edit() {
     $("#tombolEdit").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
     var status = $("#status").val()
+    var tgl_sudah_dilayani = $("#tgl_sudah_dilayani").val()
     var id = $("#idUser").val()
     $.ajax({
       url: '<?= base_url() ?>pendaftaran/edit',
       method: 'post',
       data: {
         id: id,
-        status: status
+        status: status,
+        tgl_sudah_dilayani: tgl_sudah_dilayani
       },
       dataType: 'json',
       success: function(data) {
         if (data == "") {
           $("#idUser").val("")
           $("#status").val("")
+          $("#tgl_sudah_dilayani").val("")
         } else {
           $('#pesanErrorEdit').html(data)
         }
